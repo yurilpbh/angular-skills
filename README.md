@@ -8,6 +8,7 @@ Atividades
     
     Ajustar o layout dos cards de forma responsiva, para exibir em telas com breakpoint lg ou maior com 3 cards por linha, breakpoint md com 2 cards por linha, e menores que md com 1 card por linha.
     Referência dos breakpoints: https://github.com/angular/flex-layout/wiki/Responsive-API.
+
         -Para implementar esse ajuste foram alterados os arquivos "dashboard.*"
 
 * 2. Funcionalidades do Card
@@ -44,4 +45,5 @@ Atividades
 
     Essa tela está bem sem graça não? Bom, ta aí a chance de você mostrar seus dotes artísticos !
     Afinal, queremos encantar nossos clientes com a apresentação dessas skills, portanto seja criativo, e fique a vontade para adicionar animações, cores, bordas, enfim, o que achar melhor para que essa tela fique mais a sua cara.
+    
         - Adicionei diversas mudanças em vários arquivos a fim de deixa a interface para o usuário mais atrativa.
