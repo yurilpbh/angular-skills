@@ -13,8 +13,10 @@ export class DashboardComponent implements OnInit {
 
   constructor(private httpClient: HttpClient) { }
 
+  
   ngOnInit() {
     this.httpClient.get('/api/skills').subscribe((ret: Array<any>) => this.cards = ret);
+    // When the dashboard is loaded call resize function to adapt the layout
     this.resize(window.innerWidth)  
   }
 
@@ -37,7 +39,8 @@ export class DashboardComponent implements OnInit {
     this.resize(event.target.innerWidth);
   }
 
-  //Depends the width of the window atributes the correct class layout to the div
+  // Depends the width of the window attributes the correct class to layout that will change the
+  // breakpoint making the dashboard responsive
   resize(width){
     if(width >= this.sizes.find(size => size.name == 'lg').minWidth){
       this.layout = "layout-lg"
