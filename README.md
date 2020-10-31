@@ -12,6 +12,7 @@ Atividades
     Referência dos breakpoints: https://github.com/angular/flex-layout/wiki/Responsive-API.
 
     - Para implementar esse ajuste foram alterados os arquivos "dashboard.*".
+    
 
 * 2. Funcionalidades do Card
 
@@ -37,7 +38,7 @@ Atividades
         ```
         - uma api rest já está integrada usando o https://github.com/angular/in-memory-web-api. Está configurado um delay de 5 segundos. 
         Por isso, implemente também algum tipo de loading amigável para informar o usuário do processamento da requisição.
-         - Implementei uma animação simples de entrada de loading. "Roll-in-left" no arquivo "animation.css" dentro da pasta "card".
+            - Implementei uma animação simples de entrada de loading. "Roll-in-left" no arquivo "animation.css" dentro da pasta "card".
          
     - no botão share, abrir uma nova aba no seu linkedin.
     ```javascript
