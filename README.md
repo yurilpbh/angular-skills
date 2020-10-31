@@ -12,28 +12,28 @@ Atividades
 * 2. Funcionalidades do Card
 
     - A cada click no botão like, incrementar um contador e exibir a quantidade de likes
-    ```
+    ```javascript
     this.card.likes = card.likes + 1;
     ```
         - esse contador deve ser incrementado e salvo via api rest (pode utilizar a api do httpClient)
-    ```
+    ```javascript
     this.httpClient.put<number>('/api/skills/'+this.card.id, this.card).subscribe();
     ```
         - após o incremento de likes chegar no valor 5, deve ficar azul
-    ```
+    ```javascript
     if(this.card.likes == 5){
       document.getElementsByTagName("button")[this.card.id*2 -2].style.backgroundColor = "blue"
     }
     ```    
         - após o incremento de likes chegar em um valor maior que 10, escolha uma cor de sua preferencia que não seja nem preto nem azul.
-    ```
+    ```javascript
     if(this.card.likes > 10){
       document.getElementsByTagName("button")[this.card.id*2 -2].style.backgroundColor = "red"
     }
     ```
         - uma api rest já está integrada usando o https://github.com/angular/in-memory-web-api. Está configurado um delay de 5 segundos. 
         Por isso, implemente também algum tipo de loading amigável para informar o usuário do processamento da requisição.
-          
+
     - no botão share, abrir uma nova aba no seu linkedin.
     ```
 
